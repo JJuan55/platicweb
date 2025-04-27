@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f1f8e9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #2e7d32;
+}
+
+footer {
+  background-color: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 60px;
+}
+/* Estilo de página de producto */
+.detalle-producto {
+  display: flex;
+  gap: 70px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.imagenes-producto {
+  flex: 1;
+  max-width: 400px;
+}
+
+.imagenes-producto img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.info-producto {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.detalles h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 20px;
+  color: #388e3c;
+  font-weight: bold;
+}
+
+.descripcion {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.vendedor {
+  font-size: 20px;
+  font-style: italic;
+  color: #4caf50;
+}
+
+.opciones-compra {
+  background-color: #ffffff;
+  border: 1px solid #c8e6c9;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 300px;
+}
+
+.opciones-compra label,
+.opciones-compra input,
+.opciones-compra button {
+  display: block;
+  margin-top: 10px;
+}
+
+#cantidad {
+  width: 80px;
+  padding: 5px;
+  border: 1px solid #aed581;
+  border-radius: 5px;
+}
+
+.btn-carrito {
+  background-color: #81c784;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-carrito:hover {
+  background-color: #66bb6a;
+}
+

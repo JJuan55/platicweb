@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.volver-btn {
+    text-decoration: none;
+    background: #388e3c;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.volver-btn:hover {
+    background: #2e7d32;
+}
+
+.cerrar-sesion {
+    background-color: #c62828;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cerrar-sesion:hover {
+    background-color: #b71c1c;
+}
+
+/* Contenedor principal */
+.perfil-container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Información de usuario */
+.info-usuario {
+    margin-bottom: 40px;
+}
+
+.info-usuario h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #2e7d32;
+}
+
+.foto-perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.foto-perfil img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #76b947;
+}
+
+#cambiar-foto {
+    font-size: 14px;
+}
+
+/* Formulario */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #81c784;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+form button {
+    background: #43a047;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #388e3c;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+}
+
+th {
+    background-color: #c8e6c9;
+    color: #1b5e20;
+}
+
+td {
+    background-color: #f1f8e9;
+}
+
+/* Secciones de pedidos e historial */
+.pedidos-actuales,
+.historial-compras {
+    margin-bottom: 40px;
+}
+
+.pedidos-actuales h2,
+.historial-compras h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2e7d32;
+}

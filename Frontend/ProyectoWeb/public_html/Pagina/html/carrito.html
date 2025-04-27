@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Carrito de Compras</title>
+        <link rel="stylesheet" href="../css/styleCarrito.css" />
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <div id="header-container"></div>
+
+        <main class="carrito-container">
+            <section class="lista-carrito">
+                <h2>Tu Carrito</h2>
+                <div id="items-carrito">
+                   <div class="item-info">
+                        <p>Nombre del Producto</p>
+                        <p>Cantidad: <span>1</span></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resumen-carrito">
+                <h2>Resumen</h2>
+                <div id="resumen-detalle">
+                    <p class="total">Total: $<span id="total-compra">0</span> COP</p>
+                    <button class="checkout-btn" id="finalizarCompraBtn">Finalizar compra</button>
+                    <button class="eliminar-btn" id="vaciarCarritoBtn">Vaciar carrito</button>
+                </div>
+            </section>
+        </main>
+
+        <div id="footer-container"></div>
+
+        <script src="../javascript/carrito.js"></script>
+        <script>
+            fetch("header.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("header-container").innerHTML = data;
+                    });
+
+            fetch("footer.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    });
+        </script>
+    </body>
+</html>

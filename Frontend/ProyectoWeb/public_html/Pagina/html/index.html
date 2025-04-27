@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Tienda de Reciclaje</title>
+        <link rel="icono" href="https://i.pinimg.com/736x/1e/64/dd/1e64dd7becb337fa1c76001a650b1962.jpg">
+        <link rel="stylesheet" href="../css/styleIndex.css" />
+        <link rel="stylesheet" href="../css/styleHeader.css">
+    </head>
+    <body>
+        <!-- Barra de navegación -->
+        <div id="header-container"></div>
+        <!-- Contenedor principal -->
+        <main class="main-content">
+            <!-- Carrusel -->
+            <section class="productos">
+                <h2 class="section-title">Productos Destacados</h2>
+                <div class="carousel" id="product-carousel">
+                    <!-- Productos insertados  -->
+                </div>
+            </section>
+
+            <!-- Filtros rápidos -->
+            <aside class="filtros">
+                <h3>Filtros Rápidos</h3>
+                <form>
+                    <label for="tipo">Tipo de producto:</label>
+                    <select id="tipo" name="tipo">
+                        <option value="">Todos</option>
+                        <option value="bolsos">Bolsos</option>
+                        <option value="decoración">Decoración</option>
+                        <option value="macetas">Macetas</option>
+                    </select>
+
+                    <label for="myRange">Precio máximo:</label>
+                    <input type="range" min="1000" max="100000" value="50000" class="slider" id="myRange">
+                    <span id="demo">$</span>
+
+                    <label>
+                        <input type="checkbox" name="disponible" />
+                        Solo disponibles
+                    </label>
+
+                    <button type="submit">Aplicar filtros</button>
+                </form>
+            </aside>
+        </main>
+        <div id="footer-container"></div>
+
+        <script src="../javascript/index.js"></script>
+
+        <script>
+            fetch("header.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("header-container").innerHTML = data;
+                    });
+
+            fetch("footer.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    });
+        </script>
+    </body>
+</html>
+

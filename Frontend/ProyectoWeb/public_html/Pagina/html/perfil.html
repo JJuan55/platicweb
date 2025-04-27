@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perfil de Usuario</title>
+  <link rel="stylesheet" href="../css/stylePerfil.css" />
+</head>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <a href="../Pagina/index.html" class="volver-btn">← Volver a la tienda</a>
+      <button class="cerrar-sesion">Cerrar sesión</button>
+    </div>
+    <h1>Mi Perfil</h1>
+  </header>
+
+  <main class="perfil-container">
+
+    <!-- Sección de Información del Usuario -->
+    <section class="info-usuario">
+      <h2>Información personal</h2>
+
+      <div class="foto-perfil">
+        <img src="https://i.pinimg.com/236x/ab/01/43/ab01437a16fdf57072342eb1a9bc303a.jpg" alt="Foto de perfil" id="profile-image">
+        <input type="file" id="cambiar-foto">
+      </div>
+
+      <form id="form-usuario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Numero de celular">
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Tu dirección">
+
+        <button type="submit">Guardar Cambios</button>
+      </form>
+    </section>
+
+    <!-- Sección de Pedidos Actuales -->
+    <section class="pedidos-actuales">
+      <h2>Pedidos actuales</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Productos</th>
+            <th>Estado</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-pedidos">
+          <!-- Datos se cargarán dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección de Historial de Compras -->
+    <section class="historial-compras">
+      <h2>Historial de Compras</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Productos</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-compras">
+          <!-- Datos se cargarán dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contáctanos</title>
+        <link rel="stylesheet" href="../css/styleContacto.css">
+        <link rel="stylesheet" href="../css/styleHeader.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+        <main class="contacto-container">
+            <h1>Contáctanos</h1>
+
+            <div class="contacto-content">
+                <!-- Formulario -->
+                <div class="formulario-contacto">
+                    <form id="contactForm">
+                        <label for="fname">Nombre</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Tu nombre..." required>
+
+                        <label for="lname">Apellido</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Tu apellido..." required>
+
+                        <label for="localidad">Localidad</label>
+                        <input type="text" id="localidad" name="localidad" placeholder="Su localidad..." required>
+
+
+                        <label for="subject">Mensaje</label>
+                        <textarea id="subject" name="subject" placeholder="Escribe tu mensaje..." style="height:200px" required></textarea>
+
+                        <button type="submit" class="submit-btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+
+                <!-- Información de la empresa -->
+                <div class="info-contacto">
+                    <h2>Información de la Empresa</h2>
+                    <p><strong>Dirección:</strong> Calle del Reciclaje #123, Ciudad Verde</p>
+                    <p><strong>Teléfono:</strong> +57 300 000 0000</p>
+                    <p><strong>Email:</strong> contacto@reciplasticos.com</p>
+                    <p><strong>Horario de atención:</strong> Lunes a Viernes de 8:00 a.m. a 6:00 p.m.</p>
+                </div>
+            </div>
+        </main>
+
+        <div id="footer-container"></div>
+        <script src="../javascript/contacto.js"></script>
+
+
+        <script>
+            fetch("header.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("header-container").innerHTML = data;
+                    })
+                    .then(() => {
+                        const script = document.createElement("script");
+                        script.src = "../javascript/header.js";
+                        document.body.appendChild(script);
+                    });
+            fetch("footer.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    });
+        </script>
+
+    </body>
+</html>

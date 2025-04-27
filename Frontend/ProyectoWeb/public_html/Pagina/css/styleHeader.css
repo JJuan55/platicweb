@@ -1,0 +1,43 @@
+header {
+    background-color: #2e7d32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    color: white;
+}
+
+.logo {
+    max-width: 100px;
+    height: auto;
+    font-size: 3px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    margin: 0 40px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #a5d6a7;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #1b5e20;
+    font-weight: bold;
+}
+
+.cart-icon, .profile-icon {
+    font-size: 25px;
+    border: 10px;
+    color: white;
+    text-decoration: none;
+}
+

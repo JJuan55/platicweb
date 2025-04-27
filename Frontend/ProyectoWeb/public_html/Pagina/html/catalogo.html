@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Catálogo de Productos</title>
+        <link rel="stylesheet" href="../css/styleCatalogo.css" />
+    </head>
+    <body>
+        <!-- Header incluido por JS -->
+        <div id="header-container"></div>
+
+        <main class="catalogo-container">
+            <!-- Filtros -->
+            <div class="filtros">
+                <aside class="filtros-catalogo">
+                    <h3>Filtros Avanzados</h3>
+                    <form id="formFiltros">
+                        <input type="text" name="nombre" placeholder="Buscar producto..." />
+
+                        <fieldset>
+                            <legend>Tipo de producto</legend>
+                            <label><input type="checkbox" name="tipo" value="bolsos" /> Bolsos</label>
+                            <label><input type="checkbox" name="tipo" value="macetas" /> Macetas</label>
+                            <label><input type="checkbox" name="tipo" value="decoración" /> Decoración</label>
+                            <label><input type="checkbox" name="tipo" value="muebles" /> Muebles</label>
+                            <label><input type="checkbox" name="tipo" value="otros" /> Otros</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Material</legend>
+                            <label><input type="checkbox" name="material" value="plástico" /> Plástico</label>
+                            <label><input type="checkbox" name="material" value="metal" /> Metal</label>
+                            <label><input type="checkbox" name="material" value="vidrio" /> Vidrio</label>
+                            <label><input type="checkbox" name="material" value="madera" /> Madera</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Color</legend>
+                            <input type="text" name="color" placeholder="Ej: verde, blanco..." />
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Rango de precios</legend>
+                            <label for="precioMin">Mínimo:</label>
+                            <input type="number" id="precioMin" name="precioMin" min="0" />
+
+                            <label for="precioMax">Máximo:</label>
+                            <input type="number" id="precioMax" name="precioMax" min="0" />
+                        </fieldset>
+
+                        <label><input type="checkbox" id="disponible" name="disponible" /> Solo disponibles</label>
+
+                        <label for="vendedor">Vendedor:</label>
+                        <input type="text" id="vendedor" name="vendedor" placeholder="Nombre del vendedor" />
+
+                        <label for="ubicacion">Ubicación:</label>
+                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad o región" />
+
+                        <label for="valoracion">Valoración mínima:</label>
+                        <select id="valoracion" name="valoracion">
+                            <option value="">Cualquiera</option>
+                            <option value="1">★ o más</option>
+                            <option value="2">★★ o más</option>
+                            <option value="3">★★★ o más</option>
+                            <option value="4">★★★★ o más</option>
+                            <option value="5">★★★★★</option>
+                        </select>
+
+                        <button type="submit">Aplicar filtros</button>
+                    </form>
+                </aside>
+            </div>
+
+            <!-- Productos -->
+            <section class="productos-grid" id="productosGrid">
+                <!-- Productos renderizados por JS -->
+            </section>
+        </main>
+        <div id="footer-container"></div>
+
+        <script src="../javascript/catalogo.js"></script>
+
+        <script>
+            fetch("header.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("header-container").innerHTML = data;
+                    });
+
+            fetch("footer.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    });
+        </script>
+    </body>
+</html>
+

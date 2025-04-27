@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e4f30;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.form-recuperar {
+    width: 400px;
+    background: #e8f5e9;
+    padding: 30px;
+    margin: 100px auto;
+    border-top: 4px solid #2e7d32;
+    color: #1b5e20;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-recuperar h4 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+    color: #2e7d32;
+}
+
+.controls {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #81c784;
+    background-color: #ffffff;
+    color: #2e7d32;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.buttons {
+    width: 100%;
+    padding: 12px;
+    background-color: #43a047;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.buttons:hover {
+    background-color: #388e3c;
+}
+
+.form-recuperar p {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.form-recuperar a {
+    color: #1b5e20;
+    text-decoration: none;
+}
+
+.form-recuperar a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre nosotros</title>
+        <link rel="stylesheet" href="../css/styleAboutUs.css">
+        <link rel="stylesheet" href="../css/styleHeader.css">
+    </head>
+    <body>
+        <div id="header-container"></div>
+        <img src="https://i.pinimg.com/474x/a1/d2/67/a1d267efd45c7e879fcc5568d0a37d82.jpg" alt="En trabajo">
+        <div id="footer-container"></div>
+
+       <script>
+            fetch("header.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("header-container").innerHTML = data;
+                    })
+                    .then(() => {
+                        const script = document.createElement("script");
+                        script.src = "../javascript/header.js";
+                        document.body.appendChild(script);
+                    });
+            fetch("footer.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("footer-container").innerHTML = data;
+                    });
+        </script>
+
+    </body>
+</html>
+

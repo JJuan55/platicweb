@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalle del Producto</title>
+        <link rel="stylesheet" href="../css/styleProducto.css">
+        <link rel="stylesheet" href="../css/styleHeader.css">
+    </head>
+
+    <body>
+        <div id="header-container"></div>
+
+        <!-- Contenido principal del producto -->
+        <main class="detalle-producto">
+            <div class="imagenes-producto">
+                <img id="producto-imagen" src="" alt="Producto grande">
+            </div>
+
+            <div class="info-producto">
+                <div class="detalles">
+                    <h2 id="producto-nombre"></h2>
+                    <p class="precio" id="producto-precio"></p>
+                    <p class="descripcion" id="producto-descripcion"></p>
+                    <p class="vendedor" id="producto-vendedor"></p>
+                </div>
+
+                <div class="opciones-compra">
+                    <p><strong>Disponibilidad:</strong> <span id="producto-disponibilidad"></span></p>
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" name="cantidad" value="1" min="1" />
+                    <button class="btn-carrito">Agregar al carrito</button>
+                </div>
+            </div>
+        </main>
+        <div id="footer-container"></div>
+
+        <script src="../javascript/producto.js"></script>
+        <script>
+            fetch("header.html")
+                    .then(res => res.text())
+                    .then(data => {
+                        document.getElementById("header-container").innerHTML = data;
+                    })
+                    .then(() => {
+                        const script = document.createElement("script");
+                        script.src = "../javascript/header.js";
+                        document.body.appendChild(script);
+                    });
+        </script>
+    </body>
+</html>
+

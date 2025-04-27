@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e4f30;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.form-login {
+    width: 400px;
+    background: #e8f5e9;
+    margin: auto;
+    padding: 30px;
+    border-top: 4px solid #2e7d32;
+    color: #1b5e20;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-login h5 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+    color: #2e7d32;
+}
+
+.controls {
+    width: 100%;
+    border: 1px solid #81c784;
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #ffffff;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #2e7d32;
+}
+
+.buttons, .social-button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.buttons {
+    background: #43a047;
+}
+
+.buttons:hover {
+    background: #388e3c;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.google:hover {
+    background-color: #c33d2f;
+}
+
+.microsoft {
+    background-color: #2f2f2f;
+}
+
+.microsoft:hover {
+    background-color: #1f1f1f;
+}
+
+.form-login p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form-login a {
+    color: #1b5e20;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-login a:hover {
+    text-decoration: underline;
+}
+
+.volver-btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.volver-btn:hover {
+  background-color: #45a049;
+}
+
+
+

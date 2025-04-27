@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e4f30;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.form-register {
+    width: 400px;
+    background: #e8f5e9;
+    padding: 20px;
+    margin: auto;
+    border-top: 4px solid #2e7d32;
+    color: #1b5e20;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-register h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2e7d32;
+}
+
+.controls {
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #81c784;
+    font-size: 16px;
+    color: #2e7d32;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 40px;
+    color: #1b5e20;
+}
+
+.form-register a {
+    color: #1b5e20;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.form-register a:hover {
+    text-decoration: underline;
+}
+
+.buttons {
+    width: 100%;
+    background: #43a047;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons:hover {
+    background: #388e3c;
+}
+
+.volver-btn {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.volver-btn:hover {
+  background-color: #45a049;
+}
+
+
+
+
