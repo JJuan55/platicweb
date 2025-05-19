@@ -1,13 +1,16 @@
-package model;
+package com.plasticweb.entidad;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import org.hibernate.annotations.GenericGenerator;
 
 @Entity
 public class Cliente {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(generator = "UUID")
+    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(name = "id", updatable = false, nullable = false)
     private String id;
 
     @NotBlank
@@ -42,4 +45,20 @@ public class Cliente {
 
     public String getClave() { return clave; }
     public void setClave(String clave) { this.clave = clave; }
+
+    @Entity
+    @Table(name = "registro_cliente")
+    public static class RegistroCliente {
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        private Long id;
+
+        private String nombre;
+        private String apellido;
+        private String correo;
+        private String clave;
+
+        // Getters y Setters
+    }
 }

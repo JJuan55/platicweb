@@ -1,6 +1,6 @@
-package repository;
+package com.plasticweb.repositorio;
 
-import modelo.Usuario;
+import com.plasticweb.entidad.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
